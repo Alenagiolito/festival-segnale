@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Info e luoghi — Segnale</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,10 +25,51 @@
       <p class="eyebrow">12–13 giugno · Torino · Festival immaginario</p>
       <h1 id="titolo-info">Info e luoghi</h1>
       <p class="lead">Tre sedi a Torino per due giorni di incontri, laboratori e mostre.</p>
-      <p class="reading-text">Qui trovi le fotografie delle sedi, la mappa e gli indirizzi per raggiungerle. Festival, sedi ed eventi sono inventati per questa esercitazione e non rappresentano un evento reale.</p>
+      <p class="reading-text">Qui trovi le fotografie delle sedi, la mappa e gli indirizzi per raggiungerle.</p>
+    </section>
+    <section class="content-section" aria-labelledby="titolo-galleria">
+      <h2 id="titolo-galleria">Le sedi</h2>
+      <div class="swiper galleria-sedi" aria-label="Galleria fotografica delle tre sedi">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <figure>
+              <img src="assets/luoghi/sede-centrale.jpg" alt="Facciata della sede centrale del Politecnico in corso Duca degli Abruzzi">
+              <figcaption><strong>Sede centrale</strong> · Corso Duca degli Abruzzi 24 · Officina Nord nel festival immaginario.</figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure>
+              <img src="assets/luoghi/politecnico-valentino.jpg" alt="Cortile geometrico del Politecnico al Valentino">
+              <figcaption><strong>Politecnico al Valentino</strong> · Viale Mattioli 39 · Spazio Forma nel festival immaginario.</figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure>
+              <img src="assets/luoghi/mirafiori.jpg" alt="Edificio della sede di Mirafiori, dedicata al design">
+              <figcaption><strong>Sede di Mirafiori</strong> · Corso Luigi Settembrini 178 · Cortile Comune nel festival immaginario.</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer"><div class="container"><p>Segnale · Progetto didattico · Festival immaginario</p></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper(".galleria-sedi", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      keyboard: { enabled: true },
+      a11y: {
+        prevSlideMessage: "Foto precedente",
+        nextSlideMessage: "Foto successiva"
+      }
+    });
+  </script>
 </body>
 </html>
