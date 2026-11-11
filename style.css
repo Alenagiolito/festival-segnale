@@ -223,7 +223,7 @@ h3 {
   --swiper-theme-color: var(--colore-primario);
   --swiper-navigation-size: 1.25rem;
   max-width: 54rem;
-  margin-top: 1.5rem;
+   margin: 1.5rem 0 0;
   overflow: hidden;
   border: 1px solid #b7c0b7;
   border-radius: 0.75rem;
@@ -286,4 +286,26 @@ h3 {
 .galleria-sedi .swiper-button-prev:focus-visible::after,
 .galleria-sedi .swiper-button-next:focus-visible::after {
   -webkit-text-stroke: 1.5px currentColor;
+}
+#mappa-sedi {
+  display: block;
+  width: 100%;
+  max-width: 54rem;
+  height: 24rem;
+  margin-top: 1.5rem;
+  border: 1px solid #b7c0b7;
+  border-radius: 0.75rem;
+}
+
+.mappa-link {
+  margin-top: 0.75rem;
+}
+
+.indirizzi {
+  max-width: 54rem;
+  padding-left: 1.25rem;
+}
+
+.indirizzi li {
+  margin-bottom: 1rem;
 }
