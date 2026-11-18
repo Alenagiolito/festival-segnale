@@ -7,8 +7,8 @@
   --colore-primario-scuro: #153866;
   --colore-sfondo: #f5f2e9;
   --colore-testo: #202923;
-  --font-testo: Arial, Helvetica, sans-serif;
-  --font-titoli: Georgia, "Times New Roman", serif;
+  --font-testo: Lato, Arial, Helvetica, sans-serif;
+--font-titoli: "Cormorant Garamond", Georgia, "Times New Roman", serif;
 }
 
 * {
