@@ -3,10 +3,11 @@
 
 /* Scelte comuni: ogni regola usa var() per richiamarne il valore. */
 :root {
-  --colore-primario: #1f4e8c;
-  --colore-primario-scuro: #153866;
-  --colore-sfondo: #f5f2e9;
-  --colore-testo: #202923;
+ --colore-primario: #283E5B;
+--colore-primario-scuro: #14213D;
+--colore-accento: #FCA311;
+--colore-sfondo: #FFFFFF;
+--colore-testo: #283E5B;
   --font-testo: Lato, Arial, Helvetica, sans-serif;
 --font-titoli: "Cormorant Garamond", Georgia, "Times New Roman", serif;
 }
@@ -48,7 +49,7 @@ a:focus-visible {
   top: 0;
   z-index: 100;
   padding: 1.25rem 0;
-  border-bottom: 4px solid var(--colore-primario);
+  border-bottom: 4px solid var(--colore-accento);
   background: var(--colore-sfondo);
 }
 
@@ -79,6 +80,13 @@ nav {
 nav a {
   display: inline-block;
   padding: 0.25rem 0;
+  border-bottom: 3px solid transparent;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  border-bottom-color: var(--colore-accento);
 }
 
 nav a[aria-current="page"] {
@@ -91,7 +99,7 @@ nav a[aria-current="page"] {
 
 .eyebrow,
 .event-meta {
-  color: #46564b;
+  color: var(--colore-testo);
   font-size: 0.875rem;
   font-weight: bold;
 }
@@ -101,6 +109,7 @@ h2,
 h3 {
   font-family: var(--font-titoli);
   line-height: 1.2;
+  color: var(--colore-primario-scuro);
 }
 
 h1 {
@@ -132,16 +141,16 @@ h3 {
   margin-top: 1rem;
   padding: 0.75rem 1.25rem;
   border-radius: 0.5rem;
-  background: var(--colore-primario);
-  color: #ffffff;
+ background: var(--colore-accento);
+color: var(--colore-primario-scuro);
   font-weight: bold;
   text-decoration: none;
 }
 
 .button-link:hover {
   background: var(--colore-primario-scuro);
+  color: #ffffff;
 }
-
 .content-section {
   margin: 2rem 0 3rem;
 }
@@ -191,14 +200,14 @@ h3 {
 }
 
 .event-place {
-  color: #46564b;
+  color: var(--colore-testo);
   font-size: 0.875rem;
 }
 
 .site-footer {
   padding: 1.25rem 0;
   border-top: 1px solid #b7c0b7;
-  color: #46564b;
+  color: var(--colore-testo);
   font-size: 0.875rem;
 }
 
