@@ -85,7 +85,13 @@
         </li>
       </ul>
     </section>  
-</main>
+<section class="content-section" aria-labelledby="titolo-meteo">
+      <h2 id="titolo-meteo">Meteo a Torino adesso</h2>
+      <p class="reading-text">Questo è il meteo di oggi a Torino, non la previsione per le date del festival (12–13 giugno).</p>
+      <div class="meteo" id="meteo" role="status">Caricamento del meteo…</div>
+      <p class="meteo-fonte">Dati meteo: <a href="https://open-meteo.com/">Open-Meteo</a>, licenza <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+    </section>
+  </main>
 
   <footer class="site-footer"><div class="container"><p>Segnale · Progetto didattico · Festival immaginario</p></div></footer>
 <script src="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.js"></script>
@@ -102,5 +108,6 @@
       }
     });
   </script>
+<script src="meteo.js"></script>
 </body>
 </html>

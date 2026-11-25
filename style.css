@@ -340,3 +340,34 @@ color: var(--colore-primario-scuro);
   border-radius: 0.75rem;
   background: #ffffff;
 }
+.meteo {
+  max-width: 54rem;
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  border: 1px solid #b7c0b7;
+  border-radius: 0.75rem;
+  background: #ffffff;
+}
+
+.meteo-dati {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+  margin: 0;
+}
+
+.meteo-dati dt {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.meteo-dati dd {
+  margin: 0;
+  font-family: var(--font-titoli);
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+
+.meteo-fonte {
+  font-size: 0.875rem;
+}
