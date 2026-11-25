@@ -332,3 +332,11 @@ color: var(--colore-primario-scuro);
     gap: 1.5rem;
   }
 }
+#stato-programma {
+  max-width: 65ch;
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border: 1px solid #b7c0b7;
+  border-radius: 0.75rem;
+  background: #ffffff;
+}
